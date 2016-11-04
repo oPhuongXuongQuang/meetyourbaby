@@ -16,6 +16,13 @@
 		BC3DCA131DC9A44300F51E2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3DCA111DC9A44300F51E2A /* LaunchScreen.storyboard */; };
 		BC3DCA1C1DC9C2BB00F51E2A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3DCA1B1DC9C2BB00F51E2A /* LoginViewController.m */; };
 		BCA1F9001DCA1CC500A12104 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA1F8FF1DCA1CC500A12104 /* NIDropDown.m */; };
+		BCBF32101DCB07F7007D305A /* ForgotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF320F1DCB07F7007D305A /* ForgotViewController.m */; };
+		BCBF32131DCB0A87007D305A /* Ultility.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF32121DCB0A87007D305A /* Ultility.m */; };
+		BCBF32161DCB1C4B007D305A /* OTPConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF32151DCB1C4B007D305A /* OTPConfirmViewController.m */; };
+		BCBF321C1DCB26C7007D305A /* MomSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF321B1DCB26C7007D305A /* MomSelectViewController.m */; };
+		BCBF321F1DCB9D06007D305A /* DueDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF321E1DCB9D06007D305A /* DueDateViewController.m */; };
+		BCDA2D3D1DCC45EB001370D3 /* BabyRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDA2D3C1DCC45EB001370D3 /* BabyRegisterViewController.m */; };
+		BCDA2D401DCC81A0001370D3 /* SocialLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDA2D3F1DCC81A0001370D3 /* SocialLoginViewController.m */; };
 		D22BF47385B2BC76DB872FD9 /* Pods_meetyourbaby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3273E81FD8DA0EF0030C698D /* Pods_meetyourbaby.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +44,20 @@
 		BC3DCA1B1DC9C2BB00F51E2A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BCA1F8FE1DCA1CC500A12104 /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDropDown.h; sourceTree = "<group>"; };
 		BCA1F8FF1DCA1CC500A12104 /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDropDown.m; sourceTree = "<group>"; };
+		BCBF320E1DCB07F7007D305A /* ForgotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotViewController.h; sourceTree = "<group>"; };
+		BCBF320F1DCB07F7007D305A /* ForgotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotViewController.m; sourceTree = "<group>"; };
+		BCBF32111DCB0A87007D305A /* Ultility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ultility.h; sourceTree = "<group>"; };
+		BCBF32121DCB0A87007D305A /* Ultility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ultility.m; sourceTree = "<group>"; };
+		BCBF32141DCB1C4B007D305A /* OTPConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPConfirmViewController.h; sourceTree = "<group>"; };
+		BCBF32151DCB1C4B007D305A /* OTPConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPConfirmViewController.m; sourceTree = "<group>"; };
+		BCBF321A1DCB26C7007D305A /* MomSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomSelectViewController.h; sourceTree = "<group>"; };
+		BCBF321B1DCB26C7007D305A /* MomSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomSelectViewController.m; sourceTree = "<group>"; };
+		BCBF321D1DCB9D06007D305A /* DueDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DueDateViewController.h; sourceTree = "<group>"; };
+		BCBF321E1DCB9D06007D305A /* DueDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DueDateViewController.m; sourceTree = "<group>"; };
+		BCDA2D3B1DCC45EB001370D3 /* BabyRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyRegisterViewController.h; sourceTree = "<group>"; };
+		BCDA2D3C1DCC45EB001370D3 /* BabyRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyRegisterViewController.m; sourceTree = "<group>"; };
+		BCDA2D3E1DCC81A0001370D3 /* SocialLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialLoginViewController.h; sourceTree = "<group>"; };
+		BCDA2D3F1DCC81A0001370D3 /* SocialLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialLoginViewController.m; sourceTree = "<group>"; };
 		EA791576FE97F958059190AB /* Pods-meetyourbaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meetyourbaby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meetyourbaby/Pods-meetyourbaby.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +116,20 @@
 				BC3DCA041DC9A44300F51E2A /* AppDelegate.m */,
 				BC3DCA1A1DC9C2BB00F51E2A /* LoginViewController.h */,
 				BC3DCA1B1DC9C2BB00F51E2A /* LoginViewController.m */,
+				BCBF320E1DCB07F7007D305A /* ForgotViewController.h */,
+				BCBF320F1DCB07F7007D305A /* ForgotViewController.m */,
+				BCBF32141DCB1C4B007D305A /* OTPConfirmViewController.h */,
+				BCBF32151DCB1C4B007D305A /* OTPConfirmViewController.m */,
+				BCBF321A1DCB26C7007D305A /* MomSelectViewController.h */,
+				BCBF321B1DCB26C7007D305A /* MomSelectViewController.m */,
+				BCBF321D1DCB9D06007D305A /* DueDateViewController.h */,
+				BCBF321E1DCB9D06007D305A /* DueDateViewController.m */,
+				BCDA2D3B1DCC45EB001370D3 /* BabyRegisterViewController.h */,
+				BCDA2D3C1DCC45EB001370D3 /* BabyRegisterViewController.m */,
+				BCDA2D3E1DCC81A0001370D3 /* SocialLoginViewController.h */,
+				BCDA2D3F1DCC81A0001370D3 /* SocialLoginViewController.m */,
+				BCBF32111DCB0A87007D305A /* Ultility.h */,
+				BCBF32121DCB0A87007D305A /* Ultility.m */,
 				BC3DCA061DC9A44300F51E2A /* ViewController.h */,
 				BC3DCA071DC9A44300F51E2A /* ViewController.m */,
 				BC3DCA091DC9A44300F51E2A /* Main.storyboard */,
@@ -247,10 +282,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBF321C1DCB26C7007D305A /* MomSelectViewController.m in Sources */,
+				BCDA2D401DCC81A0001370D3 /* SocialLoginViewController.m in Sources */,
+				BCBF32161DCB1C4B007D305A /* OTPConfirmViewController.m in Sources */,
 				BC3DCA081DC9A44300F51E2A /* ViewController.m in Sources */,
+				BCBF32101DCB07F7007D305A /* ForgotViewController.m in Sources */,
 				BCA1F9001DCA1CC500A12104 /* NIDropDown.m in Sources */,
 				BC3DCA0E1DC9A44300F51E2A /* meetyourbaby.xcdatamodeld in Sources */,
 				BC3DCA051DC9A44300F51E2A /* AppDelegate.m in Sources */,
+				BCBF32131DCB0A87007D305A /* Ultility.m in Sources */,
+				BCBF321F1DCB9D06007D305A /* DueDateViewController.m in Sources */,
+				BCDA2D3D1DCC45EB001370D3 /* BabyRegisterViewController.m in Sources */,
 				BC3DCA021DC9A44300F51E2A /* main.m in Sources */,
 				BC3DCA1C1DC9C2BB00F51E2A /* LoginViewController.m in Sources */,
 			);

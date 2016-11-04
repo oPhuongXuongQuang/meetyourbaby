@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BButton/BButton.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DatePickerDialog-ObjC/DatePickerDialog_ObjC.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BButton/BButton.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DatePickerDialog-ObjC/DatePickerDialog_ObjC.framework"
 fi

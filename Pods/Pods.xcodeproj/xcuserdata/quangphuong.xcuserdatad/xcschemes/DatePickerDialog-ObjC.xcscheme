@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38E36477D00C6AF9A76F0F237975CDDC"
-               BuildableName = "Pods_meetyourbaby.framework"
-               BlueprintName = "Pods-meetyourbaby"
+               BlueprintIdentifier = "55B501F522562123A4CD3BF0E48A334C"
+               BuildableName = "DatePickerDialog_ObjC.framework"
+               BlueprintName = "DatePickerDialog-ObjC"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38E36477D00C6AF9A76F0F237975CDDC"
-            BuildableName = "Pods_meetyourbaby.framework"
-            BlueprintName = "Pods-meetyourbaby"
+            BlueprintIdentifier = "55B501F522562123A4CD3BF0E48A334C"
+            BuildableName = "DatePickerDialog_ObjC.framework"
+            BlueprintName = "DatePickerDialog-ObjC"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

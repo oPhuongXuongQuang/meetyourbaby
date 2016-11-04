@@ -1,12 +1,15 @@
 PODS:
   - BButton (4.0.2)
+  - DatePickerDialog-ObjC (1.0.1)
 
 DEPENDENCIES:
   - BButton
+  - DatePickerDialog-ObjC
 
 SPEC CHECKSUMS:
   BButton: ab0f2ed3b998ae73c5188b57d270d81e4a1eeb27
+  DatePickerDialog-ObjC: 82439ee52153bea67b5a64ca30226a9f2fb390c0
 
-PODFILE CHECKSUM: 282b6557e758e6a617bad247815d9dc23189a7f3
+PODFILE CHECKSUM: b9687a6fb37b0036c6e9c915d086253ff937ce34
 
 COCOAPODS: 1.1.1

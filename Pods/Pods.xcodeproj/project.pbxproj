@@ -7,61 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03E72031EE47B2D11031FB487D4D9264 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A635401944412E396EA69FF81D70EAD8 /* Foundation.framework */; };
-		0EEBEE15B6806F5D8B7B904B565CC8A2 /* NSString+FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8FAD1F6B4529E15B70FB7574796292 /* NSString+FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		287FCADD154268206F0545835F09E6FF /* Pods-meetyourbaby-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4701FD39BF81F5B98A93E1CB05901B94 /* Pods-meetyourbaby-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44A8B421119D3E52B53AF48A8696861D /* BButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D0C33D459B470E1CEA87EA056E9926 /* BButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EEBEE15B6806F5D8B7B904B565CC8A2 /* NSString+FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 73DC228B68CE06499A4F275B9F201C65 /* NSString+FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DF5A65925A6A10BBA7E83AF02EC8C87 /* Pods-meetyourbaby-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4701FD39BF81F5B98A93E1CB05901B94 /* Pods-meetyourbaby-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44A8B421119D3E52B53AF48A8696861D /* BButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 201ACEDC3B8EDB354A81E02DF154B88E /* BButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45611EE4A338C0683AAF955B4BFE1FE3 /* LSLDatePickerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DCECD698F99DE058C0DBA99D9AE9FF97 /* LSLDatePickerDialog.m */; };
 		46AC19273E7A6B860FC4303AA8D5FBFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7512E09FD626FC8CE110467EAD517EA /* CoreGraphics.framework */; };
-		66A3267E5B25180C13CF61793619CE03 /* BButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF584E572A771EEB4433336A1E1E5D1 /* BButton-dummy.m */; };
-		6C7895CA8129E28D694513A171470184 /* Pods-meetyourbaby-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F332A5B42A2C8CD5F167069E8078090 /* Pods-meetyourbaby-dummy.m */; };
-		9AEB36BDD0FC0A84629133CF00226519 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C24CBEBAF9646B385170B083E620FDD /* FontAwesome.ttf */; };
-		C85B30436679269E4A77ADC84C2292A7 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 634381FBC7BEFCDA7D7E0136EDD80156 /* UIColor+BButton.m */; };
+		6598CA6C5213CE2930D91D29BA797AE0 /* DatePickerDialog-ObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC382C02BFFF7425C55F4B3E1D0D9C53 /* DatePickerDialog-ObjC-dummy.m */; };
+		66A3267E5B25180C13CF61793619CE03 /* BButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EA05E30523E8E019EDADC55A7675EB /* BButton-dummy.m */; };
+		6D75558DFA0F223DB75F7ACCABF47413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A635401944412E396EA69FF81D70EAD8 /* Foundation.framework */; };
+		9AEB36BDD0FC0A84629133CF00226519 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3023C5632E29E84053B44D0EA53915C4 /* FontAwesome.ttf */; };
+		BBE696184131FE648C30FB22EA2D564F /* LSLDatePickerDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DC898196BB21393C037C89EBDCA766 /* LSLDatePickerDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C300350F15CF07CDE52717AD38971652 /* DatePickerDialog-ObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D0B63816473D31E9AD031EEBAACAD5 /* DatePickerDialog-ObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C85B30436679269E4A77ADC84C2292A7 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 856E43D150C286616BB1E1E96C1B22AE /* UIColor+BButton.m */; };
 		CD058B1CC181E790CFE822D1318301BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A635401944412E396EA69FF81D70EAD8 /* Foundation.framework */; };
-		CE2C1018C01641CB6CFBD55C26E3B1C6 /* BButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFD5C695BCAF777D426F7E21F512946 /* BButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEB91FB610ACC6CA25CAB836444060D8 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E45BC69D2BC013DF8DAA18C9B8868D /* BButton.m */; };
-		CFAB6583D02EBB40BA720064461C7450 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0E427D6E46ADB4150F1CE5FB4FAF8D /* NSString+FontAwesome.m */; };
-		D4870703F49AAE6CF0111A617C8E4462 /* UIColor+BButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 34ABBF8AEFCB369BEDEA9C21E44D6792 /* UIColor+BButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE2C1018C01641CB6CFBD55C26E3B1C6 /* BButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C2D470B18F8B5244FB494CA6B06518 /* BButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB91FB610ACC6CA25CAB836444060D8 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6BDAD1CFB36009D5DB8585A4D5B777 /* BButton.m */; };
+		CFAB6583D02EBB40BA720064461C7450 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A0B1ADB5BE03D4D04BD6FC547A1F41 /* NSString+FontAwesome.m */; };
+		D4870703F49AAE6CF0111A617C8E4462 /* UIColor+BButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D673FBF1851B0E358A92858FD70B3C6 /* UIColor+BButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7F59897E34020073452FCFE50094EC2 /* Pods-meetyourbaby-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F332A5B42A2C8CD5F167069E8078090 /* Pods-meetyourbaby-dummy.m */; };
+		EB35597C2458369A2E095EAD3EB222D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A635401944412E396EA69FF81D70EAD8 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BB38D022003E774B9B067B3814EFFBE0 /* PBXContainerItemProxy */ = {
+		A1783819232D2727E80D3FB835C07A4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E130CF53EF63B7C12121B58C27AFF36A;
 			remoteInfo = BButton;
 		};
+		FEF3F20F86D3A18ED188C1C4C82B0F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B501F522562123A4CD3BF0E48A334C;
+			remoteInfo = "DatePickerDialog-ObjC";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04F8ABEAEC20362ECD0D6024DA3463C1 /* DatePickerDialog_ObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DatePickerDialog_ObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09DC898196BB21393C037C89EBDCA766 /* LSLDatePickerDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSLDatePickerDialog.h; path = Sources/LSLDatePickerDialog.h; sourceTree = "<group>"; };
+		1A4DAB2F03073D8A907C9EE590237B9E /* BButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BButton-prefix.pch"; sourceTree = "<group>"; };
+		201ACEDC3B8EDB354A81E02DF154B88E /* BButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BButton-umbrella.h"; sourceTree = "<group>"; };
 		23E4BDA4D7505053FBCED4729F67A490 /* Pods-meetyourbaby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meetyourbaby.release.xcconfig"; sourceTree = "<group>"; };
+		24EA05E30523E8E019EDADC55A7675EB /* BButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BButton-dummy.m"; sourceTree = "<group>"; };
 		26E81422246B285998442FD407120443 /* Pods-meetyourbaby-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-meetyourbaby-resources.sh"; sourceTree = "<group>"; };
 		2F332A5B42A2C8CD5F167069E8078090 /* Pods-meetyourbaby-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-meetyourbaby-dummy.m"; sourceTree = "<group>"; };
-		34ABBF8AEFCB369BEDEA9C21E44D6792 /* UIColor+BButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+BButton.h"; path = "BButton/Classes/UIColor+BButton.h"; sourceTree = "<group>"; };
+		3023C5632E29E84053B44D0EA53915C4 /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.ttf; path = BButton/resources/FontAwesome.ttf; sourceTree = "<group>"; };
+		317B07D92972EE2FE7DE8375F864BBBD /* Pods_meetyourbaby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meetyourbaby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34D0B63816473D31E9AD031EEBAACAD5 /* DatePickerDialog-ObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DatePickerDialog-ObjC-umbrella.h"; sourceTree = "<group>"; };
 		3FB4F902073B0D6988AF5EFAB38C9C75 /* Pods-meetyourbaby-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-meetyourbaby-acknowledgements.plist"; sourceTree = "<group>"; };
 		4701FD39BF81F5B98A93E1CB05901B94 /* Pods-meetyourbaby-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-meetyourbaby-umbrella.h"; sourceTree = "<group>"; };
-		4C692E432ADF3EA0282875B8055049CC /* BButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C8FAD1F6B4529E15B70FB7574796292 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+FontAwesome.h"; path = "BButton/Classes/NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		4D673FBF1851B0E358A92858FD70B3C6 /* UIColor+BButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+BButton.h"; path = "BButton/Classes/UIColor+BButton.h"; sourceTree = "<group>"; };
+		52A0B1ADB5BE03D4D04BD6FC547A1F41 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+FontAwesome.m"; path = "BButton/Classes/NSString+FontAwesome.m"; sourceTree = "<group>"; };
 		5E9B9A923685723845EE7E73CE0472C8 /* Pods-meetyourbaby-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-meetyourbaby-acknowledgements.markdown"; sourceTree = "<group>"; };
-		634381FBC7BEFCDA7D7E0136EDD80156 /* UIColor+BButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BButton.m"; path = "BButton/Classes/UIColor+BButton.m"; sourceTree = "<group>"; };
-		65ADCEE5E66E0ECF11DB8A14EE459EBB /* BButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BButton.modulemap; sourceTree = "<group>"; };
-		68D0C33D459B470E1CEA87EA056E9926 /* BButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BButton-umbrella.h"; sourceTree = "<group>"; };
-		6BFD5C695BCAF777D426F7E21F512946 /* BButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BButton.h; path = BButton/Classes/BButton.h; sourceTree = "<group>"; };
-		6EF584E572A771EEB4433336A1E1E5D1 /* BButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BButton-dummy.m"; sourceTree = "<group>"; };
-		7A7A0EE67FB790CB5D083DC392965BE6 /* BButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BButton.xcconfig; sourceTree = "<group>"; };
+		693AC68AD00E1FCD5AE972A77019B574 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73DC228B68CE06499A4F275B9F201C65 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+FontAwesome.h"; path = "BButton/Classes/NSString+FontAwesome.h"; sourceTree = "<group>"; };
 		8022CCBA964307CA3AA5BF52F5046E1F /* Pods-meetyourbaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meetyourbaby.debug.xcconfig"; sourceTree = "<group>"; };
-		89A0A6190B8230F9C9BBC98E8721DDEA /* BButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BButton-prefix.pch"; sourceTree = "<group>"; };
-		8C24CBEBAF9646B385170B083E620FDD /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.ttf; path = BButton/resources/FontAwesome.ttf; sourceTree = "<group>"; };
+		856E43D150C286616BB1E1E96C1B22AE /* UIColor+BButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BButton.m"; path = "BButton/Classes/UIColor+BButton.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C87EF01A88CADC242617DF01EFA84F8 /* BButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BButton.modulemap; sourceTree = "<group>"; };
+		9FF355E440CBBF306413C86772391893 /* BButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BButton.xcconfig; sourceTree = "<group>"; };
 		A56879E2EBF31FBC9AADA5C69A77822D /* Pods-meetyourbaby-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-meetyourbaby-frameworks.sh"; sourceTree = "<group>"; };
 		A635401944412E396EA69FF81D70EAD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B5B31675B63BFD724C07D266BF001455 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC352CBDC284ABDD5375F285004FC202 /* Pods_meetyourbaby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meetyourbaby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6E45BC69D2BC013DF8DAA18C9B8868D /* BButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BButton.m; path = BButton/Classes/BButton.m; sourceTree = "<group>"; };
+		A6ED12DBD3FA1CA1156A13320C32156A /* DatePickerDialog-ObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DatePickerDialog-ObjC-prefix.pch"; sourceTree = "<group>"; };
+		AD6BDAD1CFB36009D5DB8585A4D5B777 /* BButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BButton.m; path = BButton/Classes/BButton.m; sourceTree = "<group>"; };
+		BCA730445A4F649F3A45885557B4355E /* DatePickerDialog-ObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DatePickerDialog-ObjC.xcconfig"; sourceTree = "<group>"; };
+		C7D7D9541FFC0EB6E2C24C53CB8511F2 /* DatePickerDialog-ObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "DatePickerDialog-ObjC.modulemap"; sourceTree = "<group>"; };
+		D7C2D470B18F8B5244FB494CA6B06518 /* BButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BButton.h; path = BButton/Classes/BButton.h; sourceTree = "<group>"; };
+		DCA68AC50E0574C01F78945ECAFFA282 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCECD698F99DE058C0DBA99D9AE9FF97 /* LSLDatePickerDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSLDatePickerDialog.m; path = Sources/LSLDatePickerDialog.m; sourceTree = "<group>"; };
 		E7512E09FD626FC8CE110467EAD517EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		ED07411CB7F5BF7D9411CE5C9CE9510A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB0E427D6E46ADB4150F1CE5FB4FAF8D /* NSString+FontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+FontAwesome.m"; path = "BButton/Classes/NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		FC382C02BFFF7425C55F4B3E1D0D9C53 /* DatePickerDialog-ObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DatePickerDialog-ObjC-dummy.m"; sourceTree = "<group>"; };
 		FD651E25A4A3EE95A453556370C3B98F /* Pods-meetyourbaby.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-meetyourbaby.modulemap"; sourceTree = "<group>"; };
+		FF6216144EDDEFA3FC3C175748B6D8D6 /* BButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +95,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF08E48FC220E139F2244C7D2CB5280F /* Frameworks */ = {
+		35086E82ACCCD04C891F9EB42A9BF601 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03E72031EE47B2D11031FB487D4D9264 /* Foundation.framework in Frameworks */,
+				EB35597C2458369A2E095EAD3EB222D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF17BB8C05E66CF960CB826F0101221E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D75558DFA0F223DB75F7ACCABF47413 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +149,51 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		18185CC117854D241038F24AF28D3FFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3023C5632E29E84053B44D0EA53915C4 /* FontAwesome.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		274FFA589EFF325349F02B4714FE7B18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EA0DA10B27F2265BB992473E0ED9D9F /* BButton */,
+				48E3E04A51046DCEE588D4FD894629F6 /* DatePickerDialog-ObjC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		29830166A2225DAB9071077438F7211B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7D9541FFC0EB6E2C24C53CB8511F2 /* DatePickerDialog-ObjC.modulemap */,
+				BCA730445A4F649F3A45885557B4355E /* DatePickerDialog-ObjC.xcconfig */,
+				FC382C02BFFF7425C55F4B3E1D0D9C53 /* DatePickerDialog-ObjC-dummy.m */,
+				A6ED12DBD3FA1CA1156A13320C32156A /* DatePickerDialog-ObjC-prefix.pch */,
+				34D0B63816473D31E9AD031EEBAACAD5 /* DatePickerDialog-ObjC-umbrella.h */,
+				693AC68AD00E1FCD5AE972A77019B574 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DatePickerDialog-ObjC";
+			sourceTree = "<group>";
+		};
+		3AF1E9A1F6093E40194DDE5B2A7A2517 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C87EF01A88CADC242617DF01EFA84F8 /* BButton.modulemap */,
+				9FF355E440CBBF306413C86772391893 /* BButton.xcconfig */,
+				24EA05E30523E8E019EDADC55A7675EB /* BButton-dummy.m */,
+				1A4DAB2F03073D8A907C9EE590237B9E /* BButton-prefix.pch */,
+				201ACEDC3B8EDB354A81E02DF154B88E /* BButton-umbrella.h */,
+				DCA68AC50E0574C01F78945ECAFFA282 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BButton";
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,35 +202,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		439E81AA608AE8A964E9074401786BBF /* Support Files */ = {
+		48E3E04A51046DCEE588D4FD894629F6 /* DatePickerDialog-ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				65ADCEE5E66E0ECF11DB8A14EE459EBB /* BButton.modulemap */,
-				7A7A0EE67FB790CB5D083DC392965BE6 /* BButton.xcconfig */,
-				6EF584E572A771EEB4433336A1E1E5D1 /* BButton-dummy.m */,
-				89A0A6190B8230F9C9BBC98E8721DDEA /* BButton-prefix.pch */,
-				68D0C33D459B470E1CEA87EA056E9926 /* BButton-umbrella.h */,
-				B5B31675B63BFD724C07D266BF001455 /* Info.plist */,
+				09DC898196BB21393C037C89EBDCA766 /* LSLDatePickerDialog.h */,
+				DCECD698F99DE058C0DBA99D9AE9FF97 /* LSLDatePickerDialog.m */,
+				29830166A2225DAB9071077438F7211B /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/BButton";
+			path = "DatePickerDialog-ObjC";
 			sourceTree = "<group>";
 		};
-		63410C97ABD8D5300B9FBA349B57D7E7 /* Products */ = {
+		7B923CDA487E59F4FE9B655F4F44F209 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C692E432ADF3EA0282875B8055049CC /* BButton.framework */,
-				BC352CBDC284ABDD5375F285004FC202 /* Pods_meetyourbaby.framework */,
+				FF6216144EDDEFA3FC3C175748B6D8D6 /* BButton.framework */,
+				04F8ABEAEC20362ECD0D6024DA3463C1 /* DatePickerDialog_ObjC.framework */,
+				317B07D92972EE2FE7DE8375F864BBBD /* Pods_meetyourbaby.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		6F8F814FB0B8801E443E458785539A60 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DA39509D5E69B231A790016A97A125E5 /* BButton */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -164,31 +227,23 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				6F8F814FB0B8801E443E458785539A60 /* Pods */,
-				63410C97ABD8D5300B9FBA349B57D7E7 /* Products */,
+				274FFA589EFF325349F02B4714FE7B18 /* Pods */,
+				7B923CDA487E59F4FE9B655F4F44F209 /* Products */,
 				0E2D560BAD3EB67F38BCA43C6A39566C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7FF693C238F31BE16D1235247BD0AA41 /* Resources */ = {
+		8EA0DA10B27F2265BB992473E0ED9D9F /* BButton */ = {
 			isa = PBXGroup;
 			children = (
-				8C24CBEBAF9646B385170B083E620FDD /* FontAwesome.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		DA39509D5E69B231A790016A97A125E5 /* BButton */ = {
-			isa = PBXGroup;
-			children = (
-				6BFD5C695BCAF777D426F7E21F512946 /* BButton.h */,
-				D6E45BC69D2BC013DF8DAA18C9B8868D /* BButton.m */,
-				4C8FAD1F6B4529E15B70FB7574796292 /* NSString+FontAwesome.h */,
-				FB0E427D6E46ADB4150F1CE5FB4FAF8D /* NSString+FontAwesome.m */,
-				34ABBF8AEFCB369BEDEA9C21E44D6792 /* UIColor+BButton.h */,
-				634381FBC7BEFCDA7D7E0136EDD80156 /* UIColor+BButton.m */,
-				7FF693C238F31BE16D1235247BD0AA41 /* Resources */,
-				439E81AA608AE8A964E9074401786BBF /* Support Files */,
+				D7C2D470B18F8B5244FB494CA6B06518 /* BButton.h */,
+				AD6BDAD1CFB36009D5DB8585A4D5B777 /* BButton.m */,
+				73DC228B68CE06499A4F275B9F201C65 /* NSString+FontAwesome.h */,
+				52A0B1ADB5BE03D4D04BD6FC547A1F41 /* NSString+FontAwesome.m */,
+				4D673FBF1851B0E358A92858FD70B3C6 /* UIColor+BButton.h */,
+				856E43D150C286616BB1E1E96C1B22AE /* UIColor+BButton.m */,
+				18185CC117854D241038F24AF28D3FFF /* Resources */,
+				3AF1E9A1F6093E40194DDE5B2A7A2517 /* Support Files */,
 			);
 			path = BButton;
 			sourceTree = "<group>";
@@ -196,11 +251,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2B6EFA2E5872DF4DAEB2E2B38A6C7E9A /* Headers */ = {
+		6A16AA69F4E9193FA77BC723EAC7C447 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287FCADD154268206F0545835F09E6FF /* Pods-meetyourbaby-umbrella.h in Headers */,
+				C300350F15CF07CDE52717AD38971652 /* DatePickerDialog-ObjC-umbrella.h in Headers */,
+				BBE696184131FE648C30FB22EA2D564F /* LSLDatePickerDialog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDA7156BF1F0D052268F614E3D8DF60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DF5A65925A6A10BBA7E83AF02EC8C87 /* Pods-meetyourbaby-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,22 +282,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		82E5B6A82B178D8A481182D1E639168D /* Pods-meetyourbaby */ = {
+		38E36477D00C6AF9A76F0F237975CDDC /* Pods-meetyourbaby */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE5C13AED57AC1220D5989409ABF67B2 /* Build configuration list for PBXNativeTarget "Pods-meetyourbaby" */;
+			buildConfigurationList = DA0191626AE84CA0E6BF262631CE17A4 /* Build configuration list for PBXNativeTarget "Pods-meetyourbaby" */;
 			buildPhases = (
-				0E6982F30F52760C26860F4D3AEB23DB /* Sources */,
-				CF08E48FC220E139F2244C7D2CB5280F /* Frameworks */,
-				2B6EFA2E5872DF4DAEB2E2B38A6C7E9A /* Headers */,
+				E2D2CA1E98DF607B0A34FF53367B2F09 /* Sources */,
+				35086E82ACCCD04C891F9EB42A9BF601 /* Frameworks */,
+				8BDA7156BF1F0D052268F614E3D8DF60 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7B6A5E7B5344A6F678884DCBD1F2CED1 /* PBXTargetDependency */,
+				598012C8D98F91E07A13E52B9231A354 /* PBXTargetDependency */,
+				CD7A06771A09D27221861179E17EFCBE /* PBXTargetDependency */,
 			);
 			name = "Pods-meetyourbaby";
 			productName = "Pods-meetyourbaby";
-			productReference = BC352CBDC284ABDD5375F285004FC202 /* Pods_meetyourbaby.framework */;
+			productReference = 317B07D92972EE2FE7DE8375F864BBBD /* Pods_meetyourbaby.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55B501F522562123A4CD3BF0E48A334C /* DatePickerDialog-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D77D6C707F199B0833248DD71DFA22FA /* Build configuration list for PBXNativeTarget "DatePickerDialog-ObjC" */;
+			buildPhases = (
+				DED6549596AF6CFE442F5A65E6BC2359 /* Sources */,
+				BF17BB8C05E66CF960CB826F0101221E /* Frameworks */,
+				6A16AA69F4E9193FA77BC723EAC7C447 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DatePickerDialog-ObjC";
+			productName = "DatePickerDialog-ObjC";
+			productReference = 04F8ABEAEC20362ECD0D6024DA3463C1 /* DatePickerDialog_ObjC.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E130CF53EF63B7C12121B58C27AFF36A /* BButton */ = {
@@ -251,7 +333,7 @@
 			);
 			name = BButton;
 			productName = BButton;
-			productReference = 4C692E432ADF3EA0282875B8055049CC /* BButton.framework */;
+			productReference = FF6216144EDDEFA3FC3C175748B6D8D6 /* BButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -271,12 +353,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 63410C97ABD8D5300B9FBA349B57D7E7 /* Products */;
+			productRefGroup = 7B923CDA487E59F4FE9B655F4F44F209 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E130CF53EF63B7C12121B58C27AFF36A /* BButton */,
-				82E5B6A82B178D8A481182D1E639168D /* Pods-meetyourbaby */,
+				55B501F522562123A4CD3BF0E48A334C /* DatePickerDialog-ObjC */,
+				38E36477D00C6AF9A76F0F237975CDDC /* Pods-meetyourbaby */,
 			);
 		};
 /* End PBXProject section */
@@ -293,14 +376,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E6982F30F52760C26860F4D3AEB23DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C7895CA8129E28D694513A171470184 /* Pods-meetyourbaby-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D11EF3A7827AEC57048E433878DC5023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,14 +387,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DED6549596AF6CFE442F5A65E6BC2359 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6598CA6C5213CE2930D91D29BA797AE0 /* DatePickerDialog-ObjC-dummy.m in Sources */,
+				45611EE4A338C0683AAF955B4BFE1FE3 /* LSLDatePickerDialog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D2CA1E98DF607B0A34FF53367B2F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F59897E34020073452FCFE50094EC2 /* Pods-meetyourbaby-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7B6A5E7B5344A6F678884DCBD1F2CED1 /* PBXTargetDependency */ = {
+		598012C8D98F91E07A13E52B9231A354 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BButton;
 			target = E130CF53EF63B7C12121B58C27AFF36A /* BButton */;
-			targetProxy = BB38D022003E774B9B067B3814EFFBE0 /* PBXContainerItemProxy */;
+			targetProxy = A1783819232D2727E80D3FB835C07A4E /* PBXContainerItemProxy */;
+		};
+		CD7A06771A09D27221861179E17EFCBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DatePickerDialog-ObjC";
+			target = 55B501F522562123A4CD3BF0E48A334C /* DatePickerDialog-ObjC */;
+			targetProxy = FEF3F20F86D3A18ED188C1C4C82B0F38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -368,9 +466,45 @@
 			};
 			name = Debug;
 		};
+		06066EB4AE533554D80ADEE6D625FE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E4BDA4D7505053FBCED4729F67A490 /* Pods-meetyourbaby.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-meetyourbaby/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-meetyourbaby/Pods-meetyourbaby.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_meetyourbaby;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0784763DA8B5F56D663AA575E970F452 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A7A0EE67FB790CB5D083DC392965BE6 /* BButton.xcconfig */;
+			baseConfigurationReference = 9FF355E440CBBF306413C86772391893 /* BButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -399,6 +533,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		32AC06ED9F3738D8B7B5DDBEA54BA390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8022CCBA964307CA3AA5BF52F5046E1F /* Pods-meetyourbaby.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-meetyourbaby/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-meetyourbaby/Pods-meetyourbaby.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_meetyourbaby;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -440,9 +610,9 @@
 			};
 			name = Release;
 		};
-		83C71BDBD26E07344B3F07E6FE1F6D39 /* Debug */ = {
+		89A04A03DA1BCB718EC85A1A61BFC09B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8022CCBA964307CA3AA5BF52F5046E1F /* Pods-meetyourbaby.debug.xcconfig */;
+			baseConfigurationReference = BCA730445A4F649F3A45885557B4355E /* DatePickerDialog-ObjC.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -455,18 +625,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-meetyourbaby/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DatePickerDialog-ObjC/DatePickerDialog-ObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DatePickerDialog-ObjC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-meetyourbaby/Pods-meetyourbaby.modulemap";
+				MODULEMAP_FILE = "Target Support Files/DatePickerDialog-ObjC/DatePickerDialog-ObjC.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_meetyourbaby;
+				PRODUCT_NAME = DatePickerDialog_ObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -478,7 +644,7 @@
 		};
 		956FE6B0AF12447D8527F3103D18577E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A7A0EE67FB790CB5D083DC392965BE6 /* BButton.xcconfig */;
+			baseConfigurationReference = 9FF355E440CBBF306413C86772391893 /* BButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -508,9 +674,9 @@
 			};
 			name = Debug;
 		};
-		DBF85AB53269134EA7A0CBEC0F48D07C /* Release */ = {
+		BA875BD5C41BF77FC6B6CA725FA4D030 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23E4BDA4D7505053FBCED4729F67A490 /* Pods-meetyourbaby.release.xcconfig */;
+			baseConfigurationReference = BCA730445A4F649F3A45885557B4355E /* DatePickerDialog-ObjC.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -523,18 +689,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-meetyourbaby/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DatePickerDialog-ObjC/DatePickerDialog-ObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DatePickerDialog-ObjC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-meetyourbaby/Pods-meetyourbaby.modulemap";
+				MODULEMAP_FILE = "Target Support Files/DatePickerDialog-ObjC/DatePickerDialog-ObjC.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_meetyourbaby;
+				PRODUCT_NAME = DatePickerDialog_ObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -565,11 +727,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE5C13AED57AC1220D5989409ABF67B2 /* Build configuration list for PBXNativeTarget "Pods-meetyourbaby" */ = {
+		D77D6C707F199B0833248DD71DFA22FA /* Build configuration list for PBXNativeTarget "DatePickerDialog-ObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83C71BDBD26E07344B3F07E6FE1F6D39 /* Debug */,
-				DBF85AB53269134EA7A0CBEC0F48D07C /* Release */,
+				89A04A03DA1BCB718EC85A1A61BFC09B /* Debug */,
+				BA875BD5C41BF77FC6B6CA725FA4D030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA0191626AE84CA0E6BF262631CE17A4 /* Build configuration list for PBXNativeTarget "Pods-meetyourbaby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AC06ED9F3738D8B7B5DDBEA54BA390 /* Debug */,
+				06066EB4AE533554D80ADEE6D625FE92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

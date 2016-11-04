@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "ForgotViewController.h"
+#import "MomSelectViewController.h"
 
 @interface LoginViewController ()
 
@@ -25,6 +27,8 @@
 @property UILabel *passwordErrorLabel;
 @property UIView *verticalSeparator;
 @property UILabel *passwordLabel;
+@property UILabel *forgotLabel;
+@property Ultility *utility;
 
 @end
 
@@ -32,13 +36,15 @@
     bool isOnValidScreen;
 }
 
+@synthesize utility;
+
 #pragma mark - UIView delegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    _tintColor = [self colorWithHexString:@"#47C2E6"];
-    [self createCountryDictionary];
+    utility = [Ultility new];
+    _tintColor = [utility colorWithHexString:@"#47C2E6"];
+    self.countryDictionary = [utility createCountryDictionary];
     [self initBackground];
     [self initLogo];
     [self initLoginView];
@@ -49,6 +55,8 @@
     [self initSelect];
     [self initErrorLabel];
     [self initDownArrow];
+    
+    
     
     isOnValidScreen = false;
 }
@@ -96,7 +104,7 @@
 - (void)initLoginView {
     CGRect bounds = self.view.bounds;
     
-    self.loginView = [self createViewWithFrame:CGRectMake(bounds.size.width * 0.075, bounds.size.height * 0.48, bounds.size.width * 0.85, bounds.size.height * 0.23)];
+    self.loginView = [utility createViewWithFrame:CGRectMake(bounds.size.width * 0.075, bounds.size.height * 0.48, bounds.size.width * 0.85, bounds.size.height * 0.23)];
     [self.view addSubview:self.loginView];
 }
 
@@ -130,7 +138,7 @@
     [self.loginView addSubview:_passwordLabel];
     
     self.phoneCodeLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, loginSize.height/3 + [self marginValueY], 10, 10)];
-    [_phoneCodeLabel setText:@"+84"];
+    [_phoneCodeLabel setText:@"+61"];
     [_phoneCodeLabel setTextColor:self.tintColor];
     [_phoneCodeLabel setFont:[UIFont systemFontOfSize:13]];
     [_phoneCodeLabel sizeToFit];
@@ -138,7 +146,7 @@
     [self.loginView addSubview:self.phoneCodeLabel];
     
     self.countryLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, [self marginValueY], 10, 10)];
-    [_countryLabel setText:@"Country: Vietnam"];
+    [_countryLabel setText:@"Country: Australia"];
     [_countryLabel setTextColor:self.tintColor];
     [_countryLabel setFont:[UIFont systemFontOfSize:13]];
     [_countryLabel sizeToFit];
@@ -146,20 +154,26 @@
     [self.loginView addSubview:self.countryLabel];
     
     CGRect forgotFrame = CGRectMake(0, self.view.frame.size.height * 0.95, self.view.frame.size.width, 20);
-    UILabel *forgotLabel = [[UILabel alloc] initWithFrame:forgotFrame];
-    [forgotLabel setText:@"Forgot Password ?"];
-    [forgotLabel setTextColor:[UIColor whiteColor]];
-    [forgotLabel setFont:[UIFont systemFontOfSize:13]];
-    [forgotLabel setTextAlignment:NSTextAlignmentCenter];
-    [self.view addSubview:forgotLabel];
+    self.forgotLabel = [[UILabel alloc] initWithFrame:forgotFrame];
+    [_forgotLabel setText:@"Forgot Password ?"];
+    [_forgotLabel setTextColor:[UIColor whiteColor]];
+    [_forgotLabel setFont:[UIFont systemFontOfSize:13]];
+    [_forgotLabel setTextAlignment:NSTextAlignmentCenter];
+    [self.view addSubview:_forgotLabel];
+    
+    _forgotLabel.userInteractionEnabled = YES;
+    UITapGestureRecognizer *forgotTap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(forgotAction:)];
+    [_forgotLabel addGestureRecognizer:forgotTap];
 }
 
 - (void)initButtons {
     CGRect bounds = self.view.bounds;
     // Login button
     CGRect loginFrame = CGRectMake(bounds.size.width * 0.075, bounds.size.height * 0.78, bounds.size.width * 0.85, bounds.size.height * 0.05);
-    UIView *loginLayout = [self createViewWithFrame:loginFrame];
-    [self addText:@"ALREADY A MEMEBER? LOGIN" toLayout:loginLayout];
+    UIView *loginLayout = [utility createViewWithFrame:loginFrame];
+    [utility addText:@"ALREADY A MEMEBER? LOGIN" toLayout:loginLayout withTextColor:[utility blueTintColor]];
     [self.view addSubview:loginLayout];
     UITapGestureRecognizer *loginTap =
     [[UITapGestureRecognizer alloc] initWithTarget:self
@@ -169,8 +183,8 @@
     
     // Register button
     CGRect registerFrame = CGRectMake(bounds.size.width * 0.075, bounds.size.height * 0.85, bounds.size.width * 0.85, bounds.size.height * 0.05);
-    UIView *registerLayout = [self createViewWithFrame:registerFrame];
-    [self addText:@"REGISTER" toLayout:registerLayout];
+    UIView *registerLayout = [utility createViewWithFrame:registerFrame];
+    [utility addText:@"REGISTER" toLayout:registerLayout withTextColor:[utility blueTintColor]];
     [self.view addSubview:registerLayout];
     UITapGestureRecognizer *registerTap =
     [[UITapGestureRecognizer alloc] initWithTarget:self
@@ -181,11 +195,10 @@
 
 - (void)initInputs {
     CGSize loginSize = self.loginView.frame.size;
-    UIColor *placeholderColor = [self colorWithHexString:@"#B6E0ED"];
+    UIColor *placeholderColor = [utility colorWithHexString:@"#B6E0ED"];
     
     self.phoneNUmber = [[UITextField alloc] initWithFrame:CGRectMake(loginSize.width /3 + 20, loginSize.height/3, loginSize.width /3*2 - 30, loginSize.height /3)];
     [self.phoneNUmber setFont:[UIFont systemFontOfSize:13]];
-    [self.phoneNUmber setTextContentType:UITextContentTypeTelephoneNumber];
     [self.phoneNUmber setKeyboardType:UIKeyboardTypePhonePad];
     self.phoneNUmber.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter Mobile number" attributes:@{NSForegroundColorAttributeName: placeholderColor}];
     [self.loginView addSubview:self.phoneNUmber];
@@ -264,6 +277,11 @@
 }
 
 #pragma mark - Button Action
+- (void)forgotAction:(UITapGestureRecognizer *)recognizer {
+    ForgotViewController *forgorViewCtrl = [[ForgotViewController alloc] init];
+    [self presentViewController:forgorViewCtrl animated:YES completion:nil];
+}
+
 - (void)loginAction:(UITapGestureRecognizer *)recognizer {
     if ([self validatePhone] && [self validatePassword]) {
         
@@ -271,7 +289,8 @@
 }
 
 - (void)registerAction:(UITapGestureRecognizer *)recognizer {
-    
+    MomSelectViewController *mom = [[MomSelectViewController alloc] init];
+    [self presentViewController:mom animated:YES completion:nil];
 }
 
 - (void)countrySelect:(id)sender {
@@ -342,11 +361,15 @@
 
 #pragma mark - Common function
 - (bool)validatePhone {
-    NSString *phone;
+    NSString *phone = @"";
     if (isOnValidScreen) {
         phone = _phoneNUmber.text;
-    } else {
-        phone = [[_phoneCodeLabel.text substringFromIndex:1] stringByAppendingString:_phoneNUmber.text];
+    } else if ([_phoneNUmber.text length] > 0){
+        if ([[_phoneNUmber.text substringToIndex:1]  isEqual: @"0"]) {
+            phone = [[_phoneCodeLabel.text substringFromIndex:1] stringByAppendingString:[_phoneNUmber.text substringFromIndex:1]];
+        } else {
+            phone = [[_phoneCodeLabel.text substringFromIndex:1] stringByAppendingString:_phoneNUmber.text];
+        }
     }
     if ([phone length] < 10) {
         return false;
@@ -368,7 +391,12 @@
     [_passwordLabel setHidden:YES];
     _phoneNUmber.frame = CGRectMake(20, _phoneNUmber.frame.origin.y, self.loginView.frame.size.width  - 30, _phoneNUmber.frame.size.height);
     _password.frame = CGRectMake(20, _password.frame.origin.y, self.loginView.frame.size.width  - 30, _password.frame.size.height);
-    NSString *phone = [_phoneCodeLabel.text stringByAppendingString:_phoneNUmber.text];
+    NSString *phone;
+    if ([[_phoneNUmber.text substringToIndex:1]  isEqual: @"0"]) {
+        phone = [_phoneCodeLabel.text stringByAppendingString:[_phoneNUmber.text substringFromIndex:1]];
+    } else {
+        phone = [_phoneCodeLabel.text stringByAppendingString:_phoneNUmber.text];
+    }
     [self.phoneNUmber setText:phone];
 }
 
@@ -384,68 +412,8 @@
     [self.phoneNUmber setText:[self.phoneNUmber.text stringByReplacingOccurrencesOfString:self.phoneCodeLabel.text withString:@""]];
 }
 
-#pragma mark - Ultility
-- (UIView*)createViewWithFrame:(CGRect)frame {
-    UIView *view = [[UIView alloc]initWithFrame:frame];
-    
-    [view setBackgroundColor: [UIColor whiteColor]];
-    
-    // border radius
-    [view.layer setCornerRadius:7.0f];
-    
-    // border
-    [view.layer setBorderColor:[UIColor lightGrayColor].CGColor];
-    [view.layer setBorderWidth:0.5f];
-    
-    // drop shadow
-    [view.layer setShadowColor:[UIColor blackColor].CGColor];
-    [view.layer setShadowOpacity:0.5];
-    [view.layer setShadowRadius:4.0];
-    [view.layer setShadowOffset:CGSizeMake(2.5, 2.5)];
-    return view;
-}
-
-- (void)addText:(NSString *)text toLayout:(UIView *)layout {
-    CGRect frame = layout.frame;
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
-    [label setFont:[UIFont systemFontOfSize:13]];
-    [label setText:text];
-    [label setTextColor:self.tintColor];
-    
-    [label sizeToFit];
-    [label layoutIfNeeded];
-    label.center = CGPointMake(layout.frame.size.width/2, frame.size.height / 2);
-    [layout addSubview:label];
-}
-
 - (CGFloat)marginValueY {
     return self.loginView.frame.size.height / 8;
-}
-
-- (UIColor *)colorWithHexString:(NSString *)str {
-    const char *cStr = [str cStringUsingEncoding:NSASCIIStringEncoding];
-    long x = strtol(cStr+1, NULL, 16);
-    return [self colorWithHex:x];
-}
-
-- (UIColor *)colorWithHex:(UInt32)col {
-    unsigned char r, g, b;
-    b = col & 0xFF;
-    g = (col >> 8) & 0xFF;
-    r = (col >> 16) & 0xFF;
-    return [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:1];
-}
-
-- (void)createCountryDictionary {
-    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
-    [dic setObject:@"54" forKey:@"Argentina"];
-    [dic setObject:@"374" forKey:@"Armenia"];
-    [dic setObject:@"61" forKey:@"Australia"];
-    [dic setObject:@"86" forKey:@"China"];
-    [dic setObject:@"91" forKey:@"India"];
-    [dic setObject:@"1" forKey:@"United States"];
-    
-    self.countryDictionary = [dic mutableCopy];
 }
 
 @end
